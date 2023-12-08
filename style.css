@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nova Square', sans-serif;
+    background-color: #ede2fe;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    overflow: hidden;
+    /* margin: 10px 200px 10px 200px; */
+}
+
+.nav a {
+    float: right;
+    color: rgb(49, 49, 49);
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav a.hover:hover {
+    background-color: #663fa0db;
+    color: black;
+}
+
+.nav a.active {
+    font-size: 20px;
+    margin-right: 5 0px;
+    float: left;
+    color: #7146b3;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ede2fe;
+    column-gap: 400px;
+}
+
+.title {
+    font-size: 25px;
+    color: #7146b3;
+}	
+
+.content{
+    text-align: justify;
+    background-color: #ede2fe;
+    color: black;
+}
+
+.image {
+    padding: 40px;
+}
+
+.profile {
+    border-radius: 50%;
+    border: #7146b3 solid;
+    width: 200px;    
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    text-align: justify;
+    background-color: #ede2fe;
+    color: black;
+}
+
+.skills .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    text-align: center;
+    background-color: #ede2fe;
+    color: black;
+
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    text-align: center;
+    background-color: #ede2fe;
+    color: black;
+
+}
+
+.projects a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#contact {
+    padding: 0;
+    margin: 0;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    text-align: center;
+    background-color: #ede2fe;
+    color: black;
+    font-size: 20px;
+}
+
+.contato img {
+    width: 5vh;
+    height: 5vh;
+}
+
+.contato a {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
