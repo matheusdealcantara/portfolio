@@ -7,52 +7,90 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="nav">
+    <header class="nav">
+        <a href="#banner" class="active">Matheus de Alcântara</a>
         <nav>
-            <a href="#" class="active">Matheus de Alcântara</a>
             <a href="#contact" class="hover">Contato</a>
             <a href="#exp" class="hover">Projetos</a>
             <a href="#skills" class="hover">Habilidades</a>
             <a href="#about_me" class="hover">Sobre mim</a>
         </nav>
-    </section>
+    </header>
 
-    <section class="banner">
+    <section class="banner" id="banner">
         <div class="content">
-            <h1 class="title">Matheus de Alcântara</h1>
-            <h4>Desenvolvedor Back-end</h4>
-            <h4>Estudante de engenharia de software</h4>
+            <h1 class="title">Opa, sou o Matheus de Alcântara</h1>
+            <h2>Desenvolvedor Back-end</h2>
+            <h2>Engenheiro de software</h2>
         </div>
         <div class="image">
             <img class="profile" src="https://avatars.githubusercontent.com/matheusdealcantara" alt="github_pic">
         </div>
     </section>
 
-    <section class="skills" id="skills">
-        <div class="container">
-            <h1 class="title">Habilidades</h1>
-            <h3>Desenvolvimento back-end em Django</h3>
-            <h3>Python</h3>
-            <h3>Java</h3>
-            <h3>Node.js</h3>
-            <h3>Inglês fluente</h3>
+    <section class="about_me">
+        <div>
+            <h1 class="title">Sobre mim</h1>
+            <p>Olá, meu nome é Matheus de Alcântara, estudante de 
+                <b>Engenharia de Software</b> na Universidade de Brasília, <b>Desenvolvedor
+                Back-end</b> e trainee na empresa <b>Orc'estra Gamificação</b> (empresa júnior
+                de Engenharia de Software da UnB). A resolução de problemas e criação de algoritmos 
+                sempre me fascinaram, e foi isso que me levou a escolher minha área de 
+                atuação na engenharia de software, sempre buscando me aprimorar e adquirir novos
+                conhecimentos que possam me ajudar nos meus objetivos. 
+            </p>
         </div>
     </section>
 
-    <section class="projects" id="exp">
-        <div>
-            <h1 class="title">Projetos</h1>
-            <a href="https://github.com/matheusdealcantara/E-commerce">E-commerce</a >
-            <a href="https://github.com/matheusdealcantara/Blog_django">Blog</a>
+    <section class="skills" id="skills">
+        <h1 class="title">Habilidades</h1>
+        <div class="container">
+            <h3>Django</h3>
+            <h3>Java</h3>
+            <h3>Node.js</h3>
+            <h3>Python</h3>
+            <h3>Inglês fluente</h3>
+            <h3>Gamificação</h3>
         </div>
+    </section>
+
+    <section class="exp" id="exp">
+            <h1 class="title">Projetos</h1>
+            <div class="projects">
+                <div class="card">
+                    <div class="project"></div>
+                    <h1>E-commerce</h1>
+                    <p>
+                        Projeto de e-commerce desenvolvido em Django, com sistema de login, 
+                        carrinho de compras e sistema de pagamento. Utiliza conceitos de 
+                        sessões e cookies para manter o carrinho de compras do usuário.
+                    </p>
+                    <div class="redirect">
+                        <a href="https://github.com/matheusdealcantara/E-commerce">Link do repositório</a>
+                        <a href="https://github.com/matheusdealcantara/E-commerce"><img src="assets/images/ecommece.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h1>Agenda</h1>
+                    <p>
+                        Projeto de agenda desenvolvido em Django, com sistema de login, 
+                        cadastro de contatos e sistema de busca.
+                    </p>
+                    <div class="redirect">
+                        <a href="https://github.com/matheusdealcantara/projeto_agenda">Link do repositório</a>
+                        <a href="https://github.com/matheusdealcantara/projeto_agenda"><img src="assets/images/contact-us.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <footer id="contact">
         <div class="contato">
             <h1 class="title">Contato</h1>
-            <a href="https://github.com/matheusdealcantara"><img src="assets/images/github.png" alt=""></a>
-            <a href=""><img src="assets/images/linkedin.png" alt=""></a>
-            <a href=""></a>
+            <div class="socials">
+                <a href="https://github.com/matheusdealcantara"><img src="assets/images/github.png" alt=""></a>
+                <a href=""><img src="assets/images/linkedin.png" alt=""></a>
+            </div>
     </footer>
 </body>
 </html>

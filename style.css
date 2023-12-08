@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
+* {
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -7,21 +12,31 @@ body {
     background-color: #ede2fe;
 }
 
+.title {
+    font-size: 30px;
+    color: #7146b3;
+}	
+
 .nav {
+    position: fixed;
+    top: 0;
+    background-color: #ede2fe;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     padding: 10px;
     overflow: hidden;
+    width: 100%;
     /* margin: 10px 200px 10px 200px; */
 }
 
 .nav a {
     float: right;
     color: rgb(49, 49, 49);
-    text-align: center;
-    padding: 16px 16px;
+    /* text-align: center; */
+    padding: 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     transition: 0.3s;
 }
 
@@ -31,8 +46,7 @@ body {
 }
 
 .nav a.active {
-    font-size: 20px;
-    margin-right: 5 0px;
+    font-size: 25px;
     float: left;
     color: #7146b3;
 }
@@ -44,12 +58,10 @@ body {
     flex-direction: row;
     background-color: #ede2fe;
     column-gap: 400px;
+    padding: 50px;
+    margin-top: 100px;
 }
 
-.title {
-    font-size: 25px;
-    color: #7146b3;
-}	
 
 .content{
     text-align: justify;
@@ -67,44 +79,94 @@ body {
     width: 200px;    
 }
 
+.about_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #ede2fe;
+    color: black;
+    font-size: 20px;
+}
+
+.about_me div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
 .skills {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 20px;
     text-align: justify;
     background-color: #ede2fe;
     color: black;
 }
 
 .skills .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    padding: 40px;
+    text-align: center;
+    background-color: #ede2fe;
+    color: black;
+}
+
+.skills h3 {
+    font-size: 20px;
+}
+
+.exp {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 60px;
+    padding: 40px;
     text-align: center;
     background-color: #ede2fe;
     color: black;
+    font-size: 17px;
+}
 
+.exp img {
+    width: 7vh;
+    height: 7vh;
+}
+
+.card {
+    border: 3px solid #7146b3;
+    border-radius: 10px;
+    box-shadow: 0 2 8px rgba(0,0,0,0.3);
+    margin: 20px;
+}
+
+.exp a {
+    padding: 10px;
+    font-size: 20px;
 }
 
 .projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 60px;
-    text-align: center;
-    background-color: #ede2fe;
-    color: black;
-
+    display: grid;
+    grid-template-columns: repeat(2, 0.7fr);
+    column-gap: 200px;
+    /* width: 50%; */
 }
 
-.projects a {
-    text-decoration: none;
-    padding: 10px;
-    font-size: 20px;
+.projects .redirect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
 }
 
 #contact {
@@ -124,6 +186,11 @@ body {
     font-size: 20px;
 }
 
+.contato .socials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .contato img {
     width: 5vh;
     height: 5vh;
@@ -131,6 +198,5 @@ body {
 
 .contato a {
     text-align: center;
-    text-decoration: none;
     padding: 10px;
 }
