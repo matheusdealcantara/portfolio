@@ -9,6 +9,7 @@
 <body>
     <header class="nav">
         <a href="#banner" class="active">Matheus de Alcântara</a>
+        <span class="menu-toggle">☰</span> <!-- Botão para abrir/fechar o menu -->
         <nav>
             <a href="#contact" class="hover">Contato</a>
             <a href="#exp" class="hover">Projetos</a>
@@ -45,12 +46,34 @@
     <section class="skills" id="skills">
         <h1 class="title">Habilidades</h1>
         <div class="container">
-            <h3>Django</h3>
-            <h3>Java</h3>
-            <h3>Node.js</h3>
-            <h3>Python</h3>
-            <h3>Inglês fluente</h3>
-            <h3>Gamificação</h3>
+            <div class="skill-item">
+                <img src="assets/images/django.png" alt="Django">
+                <h3>Django</h3>
+            </div>
+            <div class="skill-item">
+                <img src="assets/images/java.png" alt="Java">
+                <h3>Java</h3>
+            </div>
+            <div class="skill-item">
+                <img src="assets/images/javascript.png" alt="Javascript">
+                <h3>Javascript</h3>
+            </div>
+            <div class="skill-item">
+                <img src="assets/images/python.png" alt="Python">
+                <h3>Python</h3>
+            </div>
+            <div class="skill-item">
+                <img src="assets/images/sql.png" alt="SQL">
+                <h3>SQL</h3>
+            </div>
+            <div class="skill-item">
+                <img src="assets/images/flask.png" alt="Flask">
+                <h3>Flask</h3>
+            </div>
+            <div class="skill-item">
+                <img src="assets/images/docker.png" alt="Docker">
+                <h3>Docker</h3>
+            </div>
         </div>
     </section>
 
@@ -117,5 +140,21 @@
                 <a href="mailto:dealcantaramatheus1@gmail.com"><img src="assets/images/novo.png" alt=""></a>
             </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active'); // Alterna a classe 'active' para mostrar/esconder o menu
+        });
+
+        // Fecha o menu ao clicar em um link
+        const navLinks = document.querySelectorAll('.nav nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -59,7 +59,7 @@ body {
     background-color: #ede2fe;
     column-gap: 400px;
     padding: 50px;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 
@@ -199,4 +199,153 @@ body {
 .contato a {
     text-align: center;
     padding: 10px;
+}
+
+/* Posiciona o ícone do menu corretamente na barra de navegação */
+.menu-toggle {
+    display: none; /* Esconde o ícone em telas grandes */
+    cursor: pointer;
+    font-size: 24px;
+    color: #7146b3;
+    padding: 10px;
+}
+
+/* Estilos para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .nav {
+        position: relative; /* Cria um contexto de posicionamento */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        width: 100%; /* Garante que a barra ocupe toda a largura da tela */
+        box-sizing: border-box; /* Inclui padding na largura total */
+    }
+
+    .banner {
+        flex-direction: column;
+        column-gap: 0;
+        padding: 20px;
+    }
+
+    .banner .image {
+        margin-top: 20px;
+    }
+
+    .about_me div {
+        width: 90%;
+    }
+
+    .skills .container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .contato .socials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav nav {
+        display: none; /* Esconde os links por padrão */
+        flex-direction: column;
+        width: 100%;
+        background-color: #ede2fe;
+        padding: 10px;
+    }
+
+    .nav nav a {
+        padding: 10px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o ícone em telas menores */
+        position: absolute; /* Posiciona em relação ao .nav */
+        top: 10px;
+        right: 20px; /* Aumenta o espaço à direita */
+        z-index: 10; /* Garante que o ícone fique acima de outros elementos */
+    }
+
+    .nav.active nav {
+        display: flex; /* Mostra os links quando o menu está ativo */
+    }
+}
+
+/* Estilos para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .skills .container {
+        grid-template-columns: 1fr;
+    }
+
+    .exp img {
+        width: 5vh;
+        height: 5vh;
+    }
+
+    .contato img {
+        width: 4vh;
+        height: 4vh;
+    }
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Ajuste responsivo para as imagens de habilidades */
+@media (max-width: 768px) {
+    .skill-item img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .skill-item h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .skill-item h3 {
+        font-size: 14px;
+    }
 }
