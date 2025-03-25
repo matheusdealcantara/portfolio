@@ -99,24 +99,24 @@ body {
 
 .skills {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    text-align: justify;
+    text-align: center;
     background-color: #ede2fe;
     color: black;
 }
 
 .skills .container {
     display: grid;
-    justify-content: center;
-    align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 100px;
+    column-gap: 30px;
+    row-gap: 20px;
+    width: 90%;
+    max-width: 1200px;
     padding: 40px;
     text-align: center;
-    background-color: #ede2fe;
-    color: black;
 }
 
 .skills h3 {
@@ -236,8 +236,17 @@ body {
     }
 
     .skills .container {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
+        grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas */
+        column-gap: 15px; /* Reduz o espaçamento entre colunas */
+        row-gap: 20px;
+        width: 95%;
+        margin-top: 20px;
+        padding: 20px 10px;
+    }
+    
+    .skill-item {
+        margin: 5px;
+        padding: 10px;
     }
 
     .projects {
@@ -288,7 +297,25 @@ body {
     }
 
     .skills .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas */
+        column-gap: 5px; /* Reduz ainda mais o espaçamento */
+        width: 100%;
+        padding: 10px 5px;
+    }
+    
+    .skill-item {
+        margin: 2px;
+        padding: 5px;
+    }
+    
+    .skill-item img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .skill-item h3 {
+        font-size: 12px;
+        margin-top: 5px;
     }
 
     .exp img {
@@ -336,16 +363,5 @@ body {
     
     .skill-item h3 {
         font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .skill-item img {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .skill-item h3 {
-        font-size: 14px;
     }
 }
